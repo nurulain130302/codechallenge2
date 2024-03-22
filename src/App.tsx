@@ -1,4 +1,3 @@
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -11,7 +10,7 @@ import Layanan from "./page/Layanan";
 import Tentang from "./page/Tentang";
 
 function App() {
-  ReactDOM.createRoot(document.getElementById("root")!).render(
+  return(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Index />} />
